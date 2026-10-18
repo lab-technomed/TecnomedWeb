@@ -1,0 +1,839 @@
+```html
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Laboratorio clínico MYPE en San Luis, Lima. Análisis de alta precisión y precios accesibles. Cotiza por WhatsApp." />
+  <title>Laboratorio Clínico MYPE San Luis | Cotiza por WhatsApp</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config (opcional) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            trust: '#0B5ED7',
+            deep: '#063B8C',
+            good: '#198754',
+            bg: '#F7F9FC',
+            ink: '#1B1F24',
+            mut: '#4B5563',
+            line: '#D9E2EF',
+            warn: '#FBBF24',
+            bad: '#DC3545'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Preferencias de accesibilidad */
+    :focus-visible {
+      outline: 3px solid #0B5ED7;
+      outline-offset: 3px;
+    }
+    /* Evitar desplazamiento incómodo por anclas */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-bg text-ink antialiased">
+  <!-- Skip link -->
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">
+    Ir al contenido
+  </a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between py-3 gap-3">
+        <div class="flex items-center gap-3">
+          <div aria-hidden="true" class="w-11 h-11 rounded-xl bg-trust flex items-center justify-center text-white font-bold text-lg">
+            🧪
+          </div>
+          <div class="leading-tight">
+            <p class="font-extrabold text-[16px] text-deep">Laboratorio Clínico MYPE</p>
+            <p class="text-[13px] text-mut">San Luis · Lima</p>
+          </div>
+        </div>
+
+        <nav aria-label="Navegación principal" class="hidden md:flex items-center gap-6 text-[15px]">
+          <a href="#beneficios" class="hover:text-deep underline-offset-4 hover:underline text-mut">Beneficios</a>
+          <a href="#servicios" class="hover:text-deep underline-offset-4 hover:underline text-mut">Servicios</a>
+          <a href="#proceso" class="hover:text-deep underline-offset-4 hover:underline text-mut">Proceso</a>
+          <a href="#confianza" class="hover:text-deep underline-offset-4 hover:underline text-mut">Confianza</a>
+          <a href="#testimonios" class="hover:text-deep underline-offset-4 hover:underline text-mut">Testimonios</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a
+            href="#cotizar"
+            class="inline-flex items-center justify-center px-4 py-3 rounded-xl bg-good text-white font-bold text-[16px] min-w-[180px] shadow hover:opacity-95"
+          >
+            🟢 Cotizar por WhatsApp
+          </a>
+
+          <!-- Mobile menu button (simple: scroll to sections) -->
+          <a
+            href="#servicios"
+            class="md:hidden inline-flex items-center justify-center px-4 py-3 rounded-xl bg-trust text-white font-bold text-[16px] min-w-[48px]"
+            aria-label="Ir a servicios"
+            title="Servicios"
+          >
+            🧾
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="contenido" class="max-w-6xl mx-auto px-4">
+    <!-- Hero -->
+    <section class="py-10 md:py-14">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+        <div class="md:col-span-7">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-line">
+            <span aria-hidden="true">📍</span>
+            <span class="text-[14px] font-semibold text-mut">Atención en San Luis · Lima</span>
+          </div>
+
+          <h1 class="mt-4 font-extrabold text-[30px] sm:text-[36px] leading-tight text-deep">
+            Tus análisis con <span class="text-trust">alta precisión</span> y precios accesibles
+          </h1>
+
+          <p class="mt-4 text-[16.5px] sm:text-[18px] text-mut leading-relaxed">
+            Resultados confiables con atención cercana y acompañamiento. Cotiza rápido y recibe orientación
+            para tu examen (ayuno y preparación si aplica).
+          </p>
+
+          <ul class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li class="flex gap-3 items-start">
+              <span class="text-[22px]" aria-hidden="true">✅</span>
+              <span class="text-[16px] font-semibold">Calidad comprobada</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-[22px]" aria-hidden="true">💰</span>
+              <span class="text-[16px] font-semibold">Precios accesibles</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-[22px]" aria-hidden="true">🤝</span>
+              <span class="text-[16px] font-semibold">Atención directa</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-[22px]" aria-hidden="true">🧪</span>
+              <span class="text-[16px] font-semibold">Resultados confiables</span>
+            </li>
+          </ul>
+
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a
+              href="#cotizar"
+              class="inline-flex items-center justify-center px-5 py-4 rounded-xl bg-good text-white font-extrabold text-[16.5px] min-w-[240px] shadow hover:opacity-95"
+            >
+              📲 Pedir cotización
+            </a>
+            <a
+              href="#servicios"
+              class="inline-flex items-center justify-center px-5 py-4 rounded-xl bg-white border border-line text-deep font-bold text-[16.5px] hover:bg-slate-50"
+            >
+              Ver exámenes y precios referenciales
+            </a>
+          </div>
+
+          <p class="mt-4 text-[14.5px] text-mut">
+            *Precios referenciales. Se confirman al momento de la cotización según disponibilidad y complejidad.
+          </p>
+        </div>
+
+        <div class="md:col-span-5">
+          <div class="bg-white border border-line rounded-2xl p-5 shadow-sm">
+            <h2 class="text-[18px] font-extrabold text-deep">📌 Filtro rápido de exámenes</h2>
+            <p class="text-[14.8px] text-mut mt-1">
+              Busca por nombre y mira el precio referencial. (Funciona sin recargar la página.)
+            </p>
+
+            <div class="mt-4 space-y-3">
+              <label class="block">
+                <span class="text-[15px] font-semibold text-ink">Buscar análisis</span>
+                <input
+                  type="search"
+                  id="buscador"
+                  placeholder="Ej: hemograma, glucosa, orina..."
+                  class="mt-2 w-full border border-line rounded-xl p-3 text-[16px] bg-white focus:ring-2 focus:ring-trust"
+                  aria-controls="lista-examenes"
+                />
+              </label>
+
+              <label class="block">
+                <span class="text-[15px] font-semibold text-ink">Filtrar por rango de precio (S/)</span>
+                <select
+                  id="filtroPrecio"
+                  class="mt-2 w-full border border-line rounded-xl p-3 text-[16px] bg-white focus:ring-2 focus:ring-trust"
+                >
+                  <option value="all">Todos</option>
+                  <option value="0-40">Hasta 40</option>
+                  <option value="41-70">41 a 70</option>
+                  <option value="71-100">71 a 100</option>
+                  <option value="101-plus">Más de 100</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="mt-4">
+              <p class="text-[14.8px] text-mut">
+                Resultados: <span class="font-extrabold text-deep" id="contador">0</span>
+              </p>
+            </div>
+
+            <div class="mt-4 max-h-[260px] overflow-auto pr-1" id="lista-examenes" role="region" aria-live="polite">
+              <div id="cardsServicios" class="space-y-3">
+                <!-- Cards inyectadas por JS -->
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="#cotizar"
+                 class="inline-flex items-center justify-center w-full px-4 py-3 rounded-xl bg-trust text-white font-extrabold text-[16px] hover:opacity-95"
+              >
+                🟦 Quiero mi cotización
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-4 bg-white border border-line rounded-2xl p-5 shadow-sm">
+            <h3 class="text-[18px] font-extrabold text-deep">📞 Respuesta rápida</h3>
+            <p class="text-[15px] text-mut mt-1">
+              Escríbenos y te indicamos disponibilidad y cómo prepararte.
+            </p>
+            <p class="text-[14px] text-mut mt-2">
+              Consejo: si tienes receta, inclúyela en tu mensaje.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="py-10 md:py-14">
+      <h2 class="text-[24px] sm:text-[28px] font-extrabold text-deep">🌟 Beneficios principales</h2>
+      <p class="mt-2 text-[16px] text-mut max-w-3xl">
+        Para que te sientas seguro/a: claridad en el servicio, orientación para preparación y resultados confiables.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="text-[24px]" aria-hidden="true">🎯</div>
+          <h3 class="mt-2 font-extrabold text-[16.5px] text-deep">Alta precisión</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">
+            Enfoque en calidad para resultados confiables.
+          </p>
+        </div>
+
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="text-[24px]" aria-hidden="true">💰</div>
+          <h3 class="mt-2 font-extrabold text-[16.5px] text-deep">Precios accesibles</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">
+            Cotiza antes y decide con tranquilidad.
+          </p>
+        </div>
+
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="text-[24px]" aria-hidden="true">🤝</div>
+          <h3 class="mt-2 font-extrabold text-[16.5px] text-deep">Atención cercana</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">
+            Acompañamiento directo para tus dudas.
+          </p>
+        </div>
+
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="text-[24px]" aria-hidden="true">⏱️</div>
+          <h3 class="mt-2 font-extrabold text-[16.5px] text-deep">Coordinación</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">
+            Te orientamos para que el proceso sea ágil.
+          </p>
+        </div>
+
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="text-[24px]" aria-hidden="true">🧾</div>
+          <h3 class="mt-2 font-extrabold text-[16.5px] text-deep">Transparencia</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">
+            Claridad en tu cotización y preparación.
+          </p>
+        </div>
+
+        <div class="bg-white border border-line p-5 rounded-2xl">
+          <div class="text-[24px]" aria-hidden="true">📍</div>
+          <h3 class="mt-2 font-extrabold text-[16.5px] text-deep">Cerca en San Luis</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">
+            Atención en tu zona para mayor comodidad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-10 md:py-14">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <h2 class="text-[24px] sm:text-[28px] font-extrabold text-deep">🧾 Análisis más consultados</h2>
+          <p class="mt-2 text-[16px] text-mut max-w-3xl">
+            Lista con <span class="font-bold text-ink">precios referenciales</span>. Confírmalo al solicitar tu cotización.
+          </p>
+        </div>
+        <a href="#cotizar" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-good text-white font-extrabold text-[16px] hover:opacity-95">
+          📲 Cotizar ahora
+        </a>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="gridServicios">
+        <!-- Cards en grilla: se llenan con JS desde el mismo dataset -->
+      </div>
+
+      <div class="mt-6 bg-white border border-line rounded-2xl p-5">
+        <h3 class="text-[18px] font-extrabold text-deep">¿No encuentras tu examen?</h3>
+        <p class="mt-2 text-[15px] text-mut">
+          Escríbenos por WhatsApp y te decimos disponibilidad, precio referencial y cómo prepararte.
+        </p>
+        <a href="#cotizar" class="mt-3 inline-flex items-center justify-center px-5 py-3 rounded-xl bg-trust text-white font-extrabold text-[16px] hover:opacity-95">
+          ✅ Consultar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="py-10 md:py-14">
+      <h2 class="text-[24px] sm:text-[28px] font-extrabold text-deep">🧭 Proceso sencillo</h2>
+      <p class="mt-2 text-[16px] text-mut max-w-3xl">
+        Pasos claros y rápidos, con acompañamiento para que sepas qué hacer en cada etapa.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-2xl bg-trust text-white flex items-center justify-center font-extrabold text-[18px]">1</div>
+          <h3 class="mt-3 font-extrabold text-[16.5px] text-deep">Escríbenos</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">Por WhatsApp: qué examen necesitas y tu zona.</p>
+        </div>
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-2xl bg-trust text-white flex items-center justify-center font-extrabold text-[18px]">2</div>
+          <h3 class="mt-3 font-extrabold text-[16.5px] text-deep">Cotizamos</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">Confirmamos precio referencial y requisitos.</p>
+        </div>
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-2xl bg-trust text-white flex items-center justify-center font-extrabold text-[18px]">3</div>
+          <h3 class="mt-3 font-extrabold text-[16.5px] text-deep">Atención</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">En sede o a domicilio (según tu elección).</p>
+        </div>
+        <div class="bg-white border border-line rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-2xl bg-trust text-white flex items-center justify-center font-extrabold text-[18px]">4</div>
+          <h3 class="mt-3 font-extrabold text-[16.5px] text-deep">Resultados</h3>
+          <p class="mt-2 text-[15px] text-mut leading-relaxed">Te enviamos tus resultados y orientación.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confianza -->
+    <section id="confianza" class="py-10 md:py-14">
+      <h2 class="text-[24px] sm:text-[28px] font-extrabold text-deep">🛡️ Confianza y calidad</h2>
+      <p class="mt-2 text-[16px] text-mut max-w-3xl">
+        Trabajamos con estándares de calidad para que tengas tranquilidad al obtener tus resultados.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-line rounded-2xl p-6">
+          <h3 class="font-extrabold text-[18px] text-deep">✅ Buenas prácticas</h3>
+          <ul class="mt-3 space-y-2 text-[15.5px] text-mut">
+            <li class="flex gap-3"><span aria-hidden="true">🔍</span><span>Protocolos claros para toma y análisis.</span></li>
+            <li class="flex gap-3"><span aria-hidden="true">🧪</span><span>Control de calidad en el proceso.</span></li>
+            <li class="flex gap-3"><span aria-hidden="true">⚙️</span><span>Mantenimiento y verificación de equipos.</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-line rounded-2xl p-6">
+          <h3 class="font-extrabold text-[18px] text-deep">🤝 Trato humano</h3>
+          <ul class="mt-3 space-y-2 text-[15.5px] text-mut">
+            <li class="flex gap-3"><span aria-hidden="true">📌</span><span>Te guiamos con preparación (si aplica ayuno).</span></li>
+            <li class="flex gap-3"><span aria-hidden="true">🗣️</span><span>Te explicamos lo necesario sin tecnicismos.</span></li>
+            <li class="flex gap-3"><span aria-hidden="true">🧾</span><span>Cotización clara antes de realizar el examen.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6 bg-white border border-line rounded-2xl p-6">
+        <p class="text-[15.5px] text-mut">
+          *Si tienes acreditaciones/certificaciones reales, reemplaza este texto por tus nombres específicos y/o logos (si los tienes).
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-10 md:py-14">
+      <h2 class="text-[24px] sm:text-[28px] font-extrabold text-deep">💬 Testimonios</h2>
+      <p class="mt-2 text-[16px] text-mut max-w-3xl">
+        Lo que nuestros pacientes valoran: claridad, trato amable y resultados confiables.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <article class="bg-white border border-line rounded-2xl p-5">
+          <div class="flex items-center gap-2">
+            <span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span>
+          </div>
+          <p class="mt-3 text-[15.5px] text-mut leading-relaxed">
+            “Me explicaron qué tenía que hacer y el precio fue justo. Me fui tranquila.”
+          </p>
+          <p class="mt-3 font-extrabold text-[15px] text-deep">— María (San Luis)</p>
+        </article>
+
+        <article class="bg-white border border-line rounded-2xl p-5">
+          <div class="flex items-center gap-2">
+            <span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span>
+          </div>
+          <p class="mt-3 text-[15.5px] text-mut leading-relaxed">
+            “Resultados claros y atención con paciencia. Me quedé más tranquila.”
+          </p>
+          <p class="mt-3 font-extrabold text-[15px] text-deep">— José (San Luis)</p>
+        </article>
+
+        <article class="bg-white border border-line rounded-2xl p-5">
+          <div class="flex items-center gap-2">
+            <span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span><span aria-hidden="true">⭐</span>
+          </div>
+          <p class="mt-3 text-[15.5px] text-mut leading-relaxed">
+            “Llamé por WhatsApp, me cotizaron rápido y todo fue sin sorpresas.”
+          </p>
+          <p class="mt-3 font-extrabold text-[15px] text-deep">— Carmen (Lima)</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cotizar / Reserva -->
+    <section id="cotizar" class="py-10 md:py-14">
+      <div class="bg-white border border-line rounded-2xl p-5 sm:p-7 shadow-sm">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div class="lg:w-5/12">
+            <h2 class="text-[24px] sm:text-[28px] font-extrabold text-deep">📲 Solicita tu cotización o reserva</h2>
+            <p class="mt-2 text-[16px] text-mut leading-relaxed">
+              Completa el formulario y te contactamos. Puedes elegir **en sede** o **cita a domicilio** (según disponibilidad).
+            </p>
+
+            <div class="mt-5 space-y-3">
+              <div class="flex gap-3">
+                <div class="w-11 h-11 rounded-xl bg-good text-white flex items-center justify-center font-extrabold">✅</div>
+                <div>
+                  <p class="font-extrabold text-[16px] text-deep">Atención clara</p>
+                  <p class="text-[14.8px] text-mut">Te orientamos con preparación si aplica ayuno.</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-11 h-11 rounded-xl bg-trust text-white flex items-center justify-center font-extrabold">🕒</div>
+                <div>
+                  <p class="font-extrabold text-[16px] text-deep">Coordinación</p>
+                  <p class="text-[14.8px] text-mut">Tiempos coordinados para que sea más fácil.</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-5 text-[13.5px] text-mut">
+              *Enviamos tu solicitud. Para confirmar disponibilidad, responderemos por WhatsApp.
+            </p>
+          </div>
+
+          <form id="formCotizacion" class="lg:w-7/12" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block">
+                  <span class="text-[15px] font-semibold text-ink">Nombre completo</span>
+                  <input
+                    required
+                    name="nombre"
+                    type="text"
+                    class="mt-2 w-full border border-line rounded-xl p-3 text-[16px] bg-white focus:ring-2 focus:ring-trust"
+                    placeholder="Ej: Juan Pérez"
+                    autocomplete="name"
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label class="block">
+                  <span class="text-[15px] font-semibold text-ink">Teléfono / WhatsApp</span>
+                  <input
+                    required
+                    name="telefono"
+                    type="tel"
+                    inputmode="tel"
+                    class="mt-2 w-full border border-line rounded-xl p-3 text-[16px] bg-white focus:ring-2 focus:ring-trust"
+                    placeholder="Ej: 9XXXXXXXX"
+                    autocomplete="tel"
+                  />
+                </label>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="block">
+                  <span class="text-[15px] font-semibold text-ink">Tipo de atención</span>
+                  <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <label class="flex items-center gap-3 bg-bg border border-line rounded-2xl p-3 cursor-pointer">
+                      <input type="radio" name="atencion" value="en_sede" class="h-5 w-5 accent-trust" checked />
+                      <span class="font-extrabold text-[15.5px] text-deep">En sede</span>
+                    </label>
+                    <label class="flex items-center gap-3 bg-bg border border-line rounded-2xl p-3 cursor-pointer">
+                      <input type="radio" name="atencion" value="a_domicilio" class="h-5 w-5 accent-trust" />
+                      <span class="font-extrabold text-[15.5px] text-deep">A domicilio</span>
+                    </label>
+                  </div>
+                </label>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="block">
+                  <span class="text-[15px] font-semibold text-ink">Examen(s) que necesitas</span>
+                  <input
+                    required
+                    name="examen"
+                    type="text"
+                    id="examenInput"
+                    class="mt-2 w-full border border-line rounded-xl p-3 text-[16px] bg-white focus:ring-2 focus:ring-trust"
+                    placeholder="Ej: Hemograma completo, Glucosa, Perfil lipídico..."
+                  />
+                  <p class="mt-2 text-[13.5px] text-mut">
+                    Puedes escribir varios exámenes separados por coma.
+                  </p>
+                </label>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="block">
+                  <span class="text-[15px] font-semibold text-ink">Distrito / Referencia</span>
+                  <input
+                    required
+                    name="zona"
+                    type="text"
+                    class="mt-2 w-full border border-line rounded-xl p-3 text-[16px] bg-white focus:ring-2 focus:ring-trust"
+                    placeholder="Ej: San Luis, cerca a... (opcional pero recomendado)"
+                  />
+                </label>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label class="block">
+                  <span class="text-[15px] font-semibold text-ink">Horario preferido</span>
+                  <select
+                    name="horario"
+                    class="mt-2 w-full border border-line rounded-xl p-3 text-[16px] bg-white focus:ring-2 focus:ring-trust"
+                  >
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde" selected>Tarde</option>
+                    <option value="indistinto">Indistinto</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <p id="formStatus" class="hidden text-[15px] font-semibold"></p>
+            </div>
+
+            <div class="mt-4 flex flex-col sm:flex-row gap-3">
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center px-5 py-4 rounded-xl bg-good text-white font-extrabold text-[16.5px] w-full sm:w-auto min-w-[240px] shadow hover:opacity-95"
+              >
+                ✅ Enviar solicitud por WhatsApp
+              </button>
+
+              <button
+                type="button"
+                id="btnLimpiar"
+                class="inline-flex items-center justify-center px-5 py-4 rounded-xl bg-white border border-line text-deep font-extrabold text-[16.5px] w-full sm:w-auto min-w-[240px] hover:bg-slate-50"
+              >
+                🧹 Limpiar
+              </button>
+            </div>
+
+            <p class="mt-3 text-[13.5px] text-mut">
+              Al enviar, generaremos un mensaje para WhatsApp. Revisa que tu número esté correcto.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-line bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <p class="font-extrabold text-[16px] text-deep">Laboratorio Clínico MYPE San Luis</p>
+          <p class="mt-2 text-[14.5px] text-mut">Precisión y confianza con precios accesibles.</p>
+          <p class="mt-3 text-[13px] text-mut">
+            *Los precios son referenciales y pueden variar según reactivos y disponibilidad.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-extrabold text-[16px] text-deep">Contacto</p>
+          <ul class="mt-2 space-y-2 text-[14.5px] text-mut">
+            <li>📍 Dirección: Av. San Juan Macías, San Luis, Lima</li>
+            <li>📞 Teléfono: 974629261</li>
+            <li>🕒 Horario: Lun–Sáb 07:00 AM - 07:00 PM</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-extrabold text-[16px] text-deep">Accesos rápidos</p>
+          <div class="mt-3 grid grid-cols-2 gap-2">
+            <a class="text-[14.5px] underline hover:text-deep" href="#beneficios">Beneficios</a>
+            <a class="text-[14.5px] underline hover:text-deep" href="#servicios">Servicios</a>
+            <a class="text-[14.5px] underline hover:text-deep" href="#proceso">Proceso</a>
+            <a class="text-[14.5px] underline hover:text-deep" href="#cotizar">Cotizar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <p class="text-[13px] text-mut">© <span id="year"></span> Laboratorio Clínico MYPE San Luis. Todos los derechos reservados.</p>
+        <a href="#cotizar" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-trust text-white font-extrabold text-[16px] hover:opacity-95">
+          📲 Cotiza aquí
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <!-- ⚠️ Reemplaza el número por el real: 51974629261 -->
+  <a
+    class="fixed bottom-5 right-5 z-50 w-[56px] h-[56px] rounded-full bg-good text-white flex items-center justify-center shadow-lg hover:opacity-95 focus:outline-none focus-visible:ring-4 focus-visible:ring-trust"
+    href="https://wa.me/51974629261"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp del laboratorio"
+    title="WhatsApp"
+  >
+    <span aria-hidden="true" class="text-[26px]">💬</span>
+  </a>
+
+  <!-- JS: dataset, buscador/filtro, cards, formulario a WhatsApp -->
+  <script>
+    const servicios = [
+      { id: 'hemograma', nombre: 'Hemograma completo', precioMin: 35, precioMax: 55, rangoEtiqueta: 'Hasta 70' },
+      { id: 'glucosa', nombre: 'Glucosa (en ayunas)', precioMin: 20, precioMax: 35, rangoEtiqueta: 'Hasta 40' },
+      { id: 'lipidico', nombre: 'Perfil lipídico (colesterol y triglicéridos)', precioMin: 45, precioMax: 75, rangoEtiqueta: '41 a 70' },
+      { id: 'orina', nombre: 'Examen de orina completo', precioMin: 25, precioMax: 45, rangoEtiqueta: 'Hasta 40' },
+      { id: 'tsh', nombre: 'TSH (tiroides)', precioMin: 40, precioMax: 70, rangoEtiqueta: '41 a 70' },
+      { id: 'vdrL', nombre: 'VDRL / Sífilis (según disponibilidad)', precioMin: 35, precioMax: 65, rangoEtiqueta: '41 a 70' },
+      { id: 'vitD', nombre: 'Vitamina D', precioMin: 60, precioMax: 100, rangoEtiqueta: '71 a 100' },
+      { id: 'hba1c', nombre: 'HbA1c', precioMin: 90, precioMax: 140, rangoEtiqueta: 'Más de 100' }
+    ];
+
+    function precioTexto(s) {
+      return `S/ ${s.precioMin} – S/ ${s.precioMax} (ref.)`;
+    }
+
+    function precioCategoria(s) {
+      const mid = (s.precioMin + s.precioMax) / 2;
+      // Usamos categorías del select
+      if (s.precioMax <= 40) return '0-40';
+      if (mid <= 70) return '41-70';
+      if (s.precioMax <= 100) return '71-100';
+      return '101-plus';
+    }
+
+    function renderCards(list, targetEl, mode = 'grid') {
+      if (!list.length) {
+        targetEl.innerHTML = `
+          <div class="text-[15px] text-mut bg-bg border border-line rounded-2xl p-4">
+            No encontramos resultados con ese filtro. Prueba con otra palabra o rango de precio.
+          </div>
+        `;
+        return;
+      }
+
+      const markup = list.map(s => {
+        const card = `
+          <div class="${mode === 'grid' ? 'bg-white border border-line rounded-2xl p-5' : 'bg-white border border-line rounded-2xl p-4'}">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="font-extrabold text-[16.5px] text-deep">${s.nombre}</h3>
+                <p class="mt-2 text-[15px] text-mut">${precioTexto(s)}</p>
+              </div>
+              <span class="text-[24px]" aria-hidden="true">${iconFor(s.id)}</span>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <button
+                type="button"
+                class="w-full inline-flex items-center justify-center px-3 py-3 rounded-xl bg-trust text-white font-extrabold text-[15.5px] hover:opacity-95"
+                data-select-examen="${escapeHtml(s.nombre)}"
+              >
+                🧾 Elegir
+              </button>
+            </div>
+          </div>
+        `;
+        return card;
+      }).join('');
+
+      targetEl.innerHTML = markup;
+    }
+
+    function iconFor(id) {
+      const map = {
+        hemograma: '🧫',
+        glucosa: '🩸',
+        lipidico: '❤️',
+        orina: '🚻',
+        tsh: '🧠',
+        vdrL: '🛡️',
+        vitD: '🌞',
+        hba1c: '📈'
+      };
+      return map[id] || '🧪';
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    // Render inicial
+    const gridEl = document.getElementById('gridServicios');
+    const cardsServiciosEl = document.getElementById('cardsServicios');
+    const buscadorEl = document.getElementById('buscador');
+    const filtroPrecioEl = document.getElementById('filtroPrecio');
+    const contadorEl = document.getElementById('contador');
+    const examenInput = document.getElementById('examenInput');
+
+    function applyFilters() {
+      const q = (buscadorEl.value || '').trim().toLowerCase();
+      const cat = filtroPrecioEl.value;
+
+      const filtrados = servicios.filter(s => {
+        const matchText = !q || s.nombre.toLowerCase().includes(q);
+        const matchCat = (cat === 'all') ? true : (precioCategoria(s) === cat);
+        return matchText && matchCat;
+      });
+
+      contadorEl.textContent = String(filtrados.length);
+
+      renderCards(filtrados, cardsServiciosEl, 'list');
+      renderCards(filtrados, gridEl, 'grid');
+
+      // Eventos: seleccionar examen -> autocompletar campo y acercar a formulario
+      cardsServiciosEl.querySelectorAll('[data-select-examen]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const val = btn.getAttribute('data-select-examen');
+          appendOrReplaceExamen(val);
+          location.hash = '#cotizar';
+          examenInput.focus({ preventScroll: true });
+        });
+      });
+
+      gridEl.querySelectorAll('[data-select-examen]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const val = btn.getAttribute('data-select-examen');
+          appendOrReplaceExamen(val);
+          location.hash = '#cotizar';
+          examenInput.focus({ preventScroll: true });
+        });
+      });
+    }
+
+    function appendOrReplaceExamen(val) {
+      const current = (examenInput.value || '').trim();
+      if (!current) {
+        examenInput.value = val;
+        return;
+      }
+      // Evitar duplicado simple
+      const parts = current.split(',').map(x => x.trim()).filter(Boolean);
+      if (parts.some(p => p.toLowerCase() === val.toLowerCase())) return;
+      examenInput.value = parts.concat([val]).join(', ');
+    }
+
+    // Wire input handlers
+    buscadorEl.addEventListener('input', applyFilters);
+    filtroPrecioEl.addEventListener('change', applyFilters);
+
+    // Render inicial
+    applyFilters();
+
+    // Año footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form WhatsApp
+    const form = document.getElementById('formCotizacion');
+    const statusEl = document.getElementById('formStatus');
+    const btnLimpiar = document.getElementById('btnLimpiar');
+
+    // ⚠️ Reemplaza por el número real del laboratorio en el enlace flotante:
+    const WA_NUMBER = '51974629261'; // para wa.me sin +, ej: 51999999999
+
+    function setStatus(msg, type) {
+      statusEl.classList.remove('hidden');
+      statusEl.textContent = msg;
+      statusEl.className = 'mt-2 text-[15px] font-semibold ' + (type === 'error' ? 'text-bad' : 'text-good');
+    }
+
+    btnLimpiar.addEventListener('click', () => {
+      form.reset();
+      examenInput.focus();
+      statusEl.classList.add('hidden');
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Validación accesible (mínima)
+      const data = new FormData(form);
+      const nombre = String(data.get('nombre') || '').trim();
+      const telefono = String(data.get('telefono') || '').trim();
+      const atencion = String(data.get('atencion') || 'en_sede');
+      const examen = String(data.get('examen') || '').trim();
+      const zona = String(data.get('zona') || '').trim();
+      const horario = String(data.get('horario') || 'tarde');
+
+      if (!nombre || nombre.length < 3) return setStatus('Por favor ingresa tu nombre completo.', 'error');
+      if (!telefono || telefono.replace(/\D/g,'').length < 8) return setStatus('Por favor ingresa un número de WhatsApp válido.', 'error');
+      if (!examen) return setStatus('Por favor indica el/los exámenes que necesitas.', 'error');
+      if (!zona) return setStatus('Por favor indica tu distrito o zona de referencia.', 'error');
+
+      // Construimos mensaje para WhatsApp
+      const atencionTexto = atencion === 'a_domicilio' ? 'A domicilio' : 'En sede';
+
+      const mensaje =
+        `Hola, soy ${nombre}.%0A` +
+        `Tel: ${telefono}.%0A` +
+        `Quiero: ${atencionTexto}.%0A` +
+        `Examen(es): ${examen}.%0A` +
+        `Zona: ${zona}.%0A` +
+        `Horario preferido: ${horario}.%0A%0A` +
+        `Por favor confirmen disponibilidad y precio referencial.`;
+
+      // Abrir WhatsApp
+      const url = `https://wa.me/${WA_NUMBER}?text=${mensaje}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+
+      setStatus('✅ Listo. Abriendo WhatsApp para enviar tu solicitud...', 'ok');
+    });
+
+    // Accesibilidad: si el usuario empieza a escribir, oculta estado de error
+    ['input', 'change'].forEach(evtName => {
+      form.addEventListener(evtName, () => {
+        statusEl.classList.add('hidden');
+      }, { passive: true });
+    });
+  </script>
+
+</body>
+</html>
+```
